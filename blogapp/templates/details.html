@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}{{ blogs.title }}{% endblock %}
+{% block content %}
+{% include 'partials/detailsNavbar.html' %}
+<div class="m-24 sm:flex justify-between">
+    <img src="{{ blogs.image }}" alt="img" class="m-3 object-contain h-48 w-96 ..." >
+    <div class="context m-3">
+        <h1 class="text-3xl">{{ blogs.title }}</h1>
+        <p>{{ blogs.description }}</p>
+    </div>
+</div>
+{% endblock %}

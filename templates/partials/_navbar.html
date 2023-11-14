@@ -1,0 +1,14 @@
+<div class="navbar m-10">
+    <ul class="flex justify-center text-md sm:text-lg">
+        <li {% if request.path == '/home' %}class="text-blue-500 p-3 hover:text-gray-500"{% endif %} class="p-3 hover:text-gray-500"><a href="{% url 'home' %}">Home</a></li>
+        <li {% if request.path == '/blog' %}class="text-blue-500 p-3 hover:text-gray-500"{% endif %} class="p-3 hover:text-gray-500"><a href="{% url 'blog' %}">Blog</a></li>
+        <li {% if request.path == '/about' %}class="text-blue-500 p-3 hover:text-gray-500"{% endif %} class="p-3 hover:text-gray-500"><a href="{% url 'about' %}">About</a></li>
+        <li {% if request.path == '/contact' %}class="text-blue-500 p-3 hover:text-gray-500"{% endif %} class="p-3 hover:text-gray-500"><a href="{% url 'contact' %}">Contact</a></li>
+    </ul>
+    <div class="icons flex justify-center">
+        <a href="https://instagram.com/g0khanism"><i class="fa-brands fa-instagram p-3 text-lg"></i></a>
+        <a href="https://github.com/gokhanylmaz"><i class="fa-brands fa-github p-3 text-lg"></i></a>
+        <a href="https://x.com/gokhansamaa"><i class="fa-brands fa-twitter p-3 text-lg"></i></a>
+        <a href="https://www.linkedin.com/in/gökhan-yılmaz-a141a6210/"><i class="fa-brands fa-linkedin p-3 text-lg"></i></a>
+    </div>
+</div>

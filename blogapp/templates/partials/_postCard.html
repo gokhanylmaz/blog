@@ -1,0 +1,8 @@
+<div class="card m-3 border shadow-md flex flex-col overflow-hidden">
+    <div class="content p-5">
+        <img src="{{ blog.image }}" alt="img">
+        <h1 class="text-lg">{{ blog.title }}</h1>
+        <p>{{ blog.description|slice:":100" }}</p>
+        <a class="text-blue-500" href="{% url 'details' blog.id %}">read more -></a>
+    </div>
+</div>
